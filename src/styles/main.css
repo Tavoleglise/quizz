@@ -1,0 +1,62 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #000;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  height: 300px;
+  background-image: url("../images/apivita_header.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.intro {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.intro .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro .headLine {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  color: yellow;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.intro .subHeadLine {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  color: #fff;
+  font-weight: regular;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=main.css.map */
