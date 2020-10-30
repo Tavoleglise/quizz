@@ -12,6 +12,17 @@
   color: white;
   text-align: center;
   font-family: ApivitaAsty-Bold;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+@mixin flexCenterColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
 }
 
 * {
@@ -23,10 +34,13 @@
 html {
   font-size: 62.5%;
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   h2 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
   }
 }
 body {
@@ -44,6 +58,7 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
+
   .honey {
     position: absolute;
     left: -5%;
@@ -96,7 +111,43 @@ header {
   flex-direction: column;
   position: relative;
   margin-top: 50px;
-  .question1 {
+  .question {
     @include question;
+  }
+  .answersPackage1 {
+    @include flexCenter;
+    .answerPackage1__item {
+      width: 256px;
+      height: 256px;
+      background-size: cover;
+    }
+    .answerPackage1__1 {
+      background-image: url("../images/foto1.png");
+    }
+    .answerPackage1__2 {
+      background-image: url("../images/foto2.png");
+    }
+    .answerPackage1__3 {
+      background-image: url("../images/foto3.png");
+    }
+    .answerPackage1__4 {
+      background-image: url("../images/foto4.png");
+    }
+    .answerPackage1__active {
+      border-color: red;
+      border-width: 5px;
+      border-style: solid;
+    }
+  }
+  .answerPackage2 {
+    @include flexCenter;
+    .answerPackageBox {
+      background-image: url("./../images/age_picture_apivita.png");
+      width: 600px;
+      height: 400px;
+      background-size: cover;
+      .answerPackage1__item {
+      }
+    }
   }
 }

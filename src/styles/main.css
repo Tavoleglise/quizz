@@ -20,11 +20,15 @@ html {
 }
 
 html h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 html h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+}
+
+html h3 {
+  font-size: 2rem;
 }
 
 body {
@@ -124,9 +128,64 @@ header {
   margin-top: 50px;
 }
 
-.quizz .question1 {
+.quizz .question {
   color: white;
   text-align: center;
   font-family: ApivitaAsty-Bold;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.quizz .answersPackage1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quizz .answersPackage1 .answerPackage1__item {
+  width: 256px;
+  height: 256px;
+  background-size: cover;
+}
+
+.quizz .answersPackage1 .answerPackage1__1 {
+  background-image: url("../images/foto1.png");
+}
+
+.quizz .answersPackage1 .answerPackage1__2 {
+  background-image: url("../images/foto2.png");
+}
+
+.quizz .answersPackage1 .answerPackage1__3 {
+  background-image: url("../images/foto3.png");
+}
+
+.quizz .answersPackage1 .answerPackage1__4 {
+  background-image: url("../images/foto4.png");
+}
+
+.quizz .answersPackage1 .answerPackage1__active {
+  border-color: red;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.quizz .answerPackage2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quizz .answerPackage2 .answerPackageBox {
+  background-image: url("./../images/age_picture_apivita.png");
+  width: 600px;
+  height: 400px;
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */
