@@ -8,8 +8,9 @@ const results = {
   respuestaP3: null,
 };
 const getAnswers = (numeroPregunta, numeroRespuesta) => {
-  let respuestas = document.getElementById(`pregunta${numeroPregunta}`)
+  let respuestas = document.getElementById(`answersPackage${numeroPregunta}`)
     .children;
+  console.log(respuestas);
 
   if (numeroPregunta == 1) {
     results.respuestaP1 = numeroRespuesta;
@@ -20,6 +21,14 @@ const getAnswers = (numeroPregunta, numeroRespuesta) => {
   }
 
   console.log(results);
+};
+
+const activateAnswer = (numeroPregunta, numeroRespuesta) => {
+  let element = document.getElementsByClassName(
+    `answerPackage${numeroPregunta}__${numeroRespuesta}`
+  );
+  if (numeroPregunta == 1) {
+  }
 };
 
 const analizar = () => {

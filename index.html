@@ -8,6 +8,12 @@
   </head>
 
   <body>
+    <div class="orange">
+      <img src="./src/images/orange.png" alt="" />
+    </div>
+    <div class="bee">
+      <img src="./src/images/abeja_apivita.png" alt="" />
+    </div>
     <header></header>
     <div class="intro">
       <div class="honey">
@@ -38,11 +44,21 @@
       </div>
       <div class="answersPackage1">
         <div
+          onclick="getAnswers(1, 0)"
           class="answerPackage1__1 answerPackage1__item answerPackage1__active"
         ></div>
-        <div class="answerPackage1__2 answerPackage1__item"></div>
-        <div class="answerPackage1__3 answerPackage1__item"></div>
-        <div class="answerPackage1__4 answerPackage1__item"></div>
+        <div
+          onclick="getAnswers(1, 1)"
+          class="answerPackage1__2 answerPackage1__item"
+        ></div>
+        <div
+          onclick="getAnswers(1, 2)"
+          class="answerPackage1__3 answerPackage1__item"
+        ></div>
+        <div
+          onclick="getAnswers(1, 3)"
+          class="answerPackage1__4 answerPackage1__item"
+        ></div>
       </div>
       <div class="question question2">
         <h2>¿Qué edad tienes?</h2>
@@ -50,15 +66,46 @@
       <div class="answerPackage2">
         <div class="answerPackageBox">
           <div
-            class="answerPackage2__1 answerPackage1__item answerPackage1__active"
-          ></div>
-          <div class="answerPackage2__2 answerPackage1__item"></div>
-          <div class="answerPackage2__3 answerPackage1__item"></div>
-          <div class="answerPackage2__4 answerPackage1__item"></div>
+            class="answerPackage2__1 answerPackage2__item answerPackage2__active"
+          >
+            <h3>Menos de 20 años</h3>
+          </div>
+          <div class="answerPackage2__2 answerPackage2__item">
+            <h3>Menos de 20 años</h3>
+          </div>
+          <div class="answerPackage2__3 answerPackage2__item">
+            <h3>Menos de 20 años</h3>
+          </div>
+          <div class="answerPackage2__4 answerPackage2__item">
+            <h3>Menos de 20 años</h3>
+          </div>
         </div>
       </div>
       <div class="question question3">
         <h2>¿Cuál es tu tipo de piel</h2>
+      </div>
+      <div class="answerPackage3">
+        <div
+          class="answerPackage3__1 answerPackage3__item answerPackage3__active"
+        >
+          <img src="./src/images/foto_hexagonal__1.png" alt="" />
+          <h3>Normal</h3>
+        </div>
+        <div class="answerPackage3__1 answerPackage3__item">
+          <img src="./src/images/foto_hexagonal__1.png" alt="" />
+          <h3>Seca</h3>
+        </div>
+        <div class="answerPackage3__1 answerPackage3__item">
+          <img src="./src/images/foto_hexagonal__1.png" alt="" />
+          <h3>Mixta o grasa</h3>
+        </div>
+        <div class="answerPackage3__1 answerPackage3__item">
+          <img src="./src/images/foto_hexagonal__1.png" alt="" />
+          <h3>Sensible</h3>
+        </div>
+      </div>
+      <div class="finalButton">
+        <img src="./src/images/boton_final.png" alt="" />
       </div>
     </div>
     <!--div class="quiz">

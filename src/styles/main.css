@@ -32,8 +32,29 @@ html h3 {
 }
 
 body {
-  background-color: #000;
+  background-color: #211915;
   font-family: "ApivitaAsty-light";
+  position: relative;
+}
+
+body .orange {
+  position: absolute;
+  right: -5%;
+  bottom: 30%;
+}
+
+body .orange img {
+  max-width: 200px;
+}
+
+body .bee {
+  position: absolute;
+  left: 5%;
+  bottom: 30%;
+}
+
+body .bee img {
+  max-width: 70px;
 }
 
 header {
@@ -61,10 +82,18 @@ header {
   top: 70%;
 }
 
+.intro .honey img {
+  width: 300px;
+}
+
 .intro .panal {
   position: absolute;
   top: 0;
   right: -7%;
+}
+
+.intro .panal img {
+  width: 300px;
 }
 
 .intro .headLine {
@@ -187,5 +216,56 @@ header {
   width: 600px;
   height: 400px;
   background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 1rem;
+}
+
+.quizz .answerPackage2 .answerPackageBox .answerPackage2__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quizz .answerPackage3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quizz .answerPackage3 .answerPackage3__item {
+  color: #fff;
+  text-align: center;
+}
+
+.quizz .answerPackage3 .answerPackage3__item img {
+  max-width: 200px;
+}
+
+.quizz .answerPackage3 .answerPackage3__active {
+  border-bottom: 5px solid red;
+}
+
+.quizz .finalButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.quizz .finalButton img {
+  max-width: 300px;
 }
 /*# sourceMappingURL=main.css.map */
