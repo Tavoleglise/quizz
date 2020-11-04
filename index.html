@@ -42,41 +42,60 @@
       <div class="question question1">
         <h2>¿Cuál es tu principal preocupación acerca de tu piel?</h2>
       </div>
-      <div class="answersPackage1">
+      <div class="answersPackage1" id="answersPackage1">
         <div
-          onclick="getAnswers(1, 0)"
-          class="answerPackage1__1 answerPackage1__item answerPackage1__active"
-        ></div>
+          onclick="getAnswers(1, 0), activateAnswer(1,1)"
+          class="answerPackage1__1 answerPackage1__item"
+        >
+          <h3>piel</h3>
+        </div>
+
         <div
-          onclick="getAnswers(1, 1)"
+          onclick="getAnswers(1, 1), activateAnswer(1,2)"
           class="answerPackage1__2 answerPackage1__item"
-        ></div>
+        >
+          <h3>piel</h3>
+        </div>
         <div
-          onclick="getAnswers(1, 2)"
+          onclick="getAnswers(1, 2), activateAnswer(1,3)"
           class="answerPackage1__3 answerPackage1__item"
-        ></div>
+        >
+          <h3>piel</h3>
+        </div>
         <div
-          onclick="getAnswers(1, 3)"
+          onclick="getAnswers(1, 3), activateAnswer(1,4)"
           class="answerPackage1__4 answerPackage1__item"
-        ></div>
+        >
+          <h3>piel</h3>
+        </div>
       </div>
       <div class="question question2">
         <h2>¿Qué edad tienes?</h2>
       </div>
       <div class="answerPackage2">
-        <div class="answerPackageBox">
+        <div class="answerPackageBox" id="answersPackage2">
           <div
-            class="answerPackage2__1 answerPackage2__item answerPackage2__active"
+            class="answerPackage2__1 answerPackage2__item"
+            onclick="getAnswers(2, 0), activateAnswer(2,1)"
           >
             <h3>Menos de 20 años</h3>
           </div>
-          <div class="answerPackage2__2 answerPackage2__item">
+          <div
+            onclick="getAnswers(2, 1), activateAnswer(2,2)"
+            class="answerPackage2__2 answerPackage2__item"
+          >
             <h3>Menos de 20 años</h3>
           </div>
-          <div class="answerPackage2__3 answerPackage2__item">
+          <div
+            onclick="getAnswers(2, 2), activateAnswer(2,3)"
+            class="answerPackage2__3 answerPackage2__item"
+          >
             <h3>Menos de 20 años</h3>
           </div>
-          <div class="answerPackage2__4 answerPackage2__item">
+          <div
+            onclick="getAnswers(2, 3), activateAnswer(2,4)"
+            class="answerPackage2__4 answerPackage2__item"
+          >
             <h3>Menos de 20 años</h3>
           </div>
         </div>
@@ -84,54 +103,101 @@
       <div class="question question3">
         <h2>¿Cuál es tu tipo de piel</h2>
       </div>
-      <div class="answerPackage3">
+      <div class="answerPackage3" id="answersPackage3">
         <div
-          class="answerPackage3__1 answerPackage3__item answerPackage3__active"
+          class="answerPackage3__1 answerPackage3__item"
+          onclick="getAnswers(3, 0), activateAnswer(3,1)"
         >
           <img src="./src/images/foto_hexagonal__1.png" alt="" />
           <h3>Normal</h3>
         </div>
-        <div class="answerPackage3__1 answerPackage3__item">
+        <div
+          class="answerPackage3__2 answerPackage3__item"
+          onclick="getAnswers(3, 1), activateAnswer(3,2)"
+        >
           <img src="./src/images/foto_hexagonal__1.png" alt="" />
           <h3>Seca</h3>
         </div>
-        <div class="answerPackage3__1 answerPackage3__item">
+        <div
+          class="answerPackage3__3 answerPackage3__item"
+          onclick="getAnswers(3, 2), activateAnswer(3,3)"
+        >
           <img src="./src/images/foto_hexagonal__1.png" alt="" />
           <h3>Mixta o grasa</h3>
         </div>
-        <div class="answerPackage3__1 answerPackage3__item">
+        <div
+          class="answerPackage3__4 answerPackage3__item"
+          onclick="getAnswers(3, 3), activateAnswer(3,4)"
+        >
           <img src="./src/images/foto_hexagonal__1.png" alt="" />
           <h3>Sensible</h3>
         </div>
       </div>
-      <div class="finalButton">
+      <div onclick="analizar()" class="finalButton">
         <img src="./src/images/boton_final.png" alt="" />
       </div>
+      <div class="results">
+        <div class="diario tituloResultado" id="diario">
+          <h2>Rutina diaria</h2>
+          <div class="000 conjuntoProductos">
+            <div class="product">
+              <img
+                src="./src/images/APIVITA_LIMPIADORES/10-22-00-523 FACE _ EYE  FOAM CLEASING 200ML.png"
+                alt=""
+              />
+            </div>
+            <div class="product">
+              <img
+                src="./src/images/APIVITA_AQUA_BEE_LICIOUS/10-22-01-589 AQUA BEELICIOUS EYE GEL TUBE AND BOX.png"
+                alt=""
+              />
+            </div>
+            <div class="product">
+              <img
+                src="./src/images/APIVITA_AQUA_BEE_LICIOUS/10-22-01-590 AQUA BEELICIOUS BOOSTER TUBE AND BOX.png"
+                alt=""
+              />
+            </div>
+            <div class="product">
+              <img
+                src="./src/images/APIVITA_AQUA_BEE_LICIOUS/10-22-01-587 AQUA BEELICIOUS OILFREE LIGHT TUBE AND BOX.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="semanal tituloResultado" id="semanal">
+          <h2>1 Vez por semana</h2>
+          <div class="000 conjuntoProductos">
+            <div class="product">
+              <img
+                src="./src/images/APIVITA_MASCARILLAS_NUEVA_IMAGEN/10-22-44-172 EXPRESS ROYAL JELLY FOIL _ BOX.png"
+                alt=""
+              />
+            </div>
+            <div class="product">
+              <img
+                src="./src/images/APIVITA_MASCARILLAS_NUEVA_IMAGEN/10-22-44-172 EXPRESS ROYAL JELLY FOIL _ BOX.png"
+                alt=""
+              />
+            </div>
+            <div class="product">
+              <img
+                src="./src/images/APIVITA_MASCARILLAS_NUEVA_IMAGEN/10-22-44-172 EXPRESS ROYAL JELLY FOIL _ BOX.png"
+                alt=""
+              />
+            </div>
+            <div class="product">
+              <img
+                src="./src/images/APIVITA_MASCARILLAS_NUEVA_IMAGEN/10-22-44-172 EXPRESS ROYAL JELLY FOIL _ BOX.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!--div class="quiz">
-        <div id="pregunta1" class="pregunta1">
-            <input onchange="getAnswers(1, 0)" value="a" class="respuesta" id="r1" type="checkbox">respuesta 1</input>
-            <input onchange="getAnswers(1, 1)" class="respuesta" id="r2" type="checkbox">respuesta 2</input>
-            <input onchange="getAnswers(1, 2)" class="respuesta" id="r3" type="checkbox">respuesta 3</input>
-            <input onchange="getAnswers(1, 3)" class="respuesta" id="r4" type="checkbox">respuesta 4</input>
-        </div>
-        <div id="pregunta2" class="pregunta2">
-            <input onchange="getAnswers(2, 0)" class="respuesta" id="r1" type="checkbox">respuesta 1</input>
-            <input onchange="getAnswers(2, 1)" class="respuesta" id="r2" type="checkbox">respuesta 2</input>
-            <input onchange="getAnswers(2, 2)" class="respuesta" id="r3" type="checkbox">respuesta 3</input>
-            <input onchange="getAnswers(2, 3)" class="respuesta" id="r4" type="checkbox">respuesta 4</input>
-        </div>
-        <div id="pregunta3" class="pregunta3">
-            <input onchange="getAnswers(3, 0)" class="respuesta" id="r1" type="checkbox">respuesta 1</input>
-            <input onchange="getAnswers(3, 1)" class="respuesta" id="r2" type="checkbox">respuesta 2</input>
-            <input onchange="getAnswers(3, 2)" class="respuesta" id="r3" type="checkbox">respuesta 3</input>
-            <input onchange="getAnswers(3,)" class="respuesta" id="r4" type="checkbox">respuesta 4</input>
-        </div>
-        <div class="results">
-            <button onclick="analizar()">analizar</button>
-            <div id="resultados">resultados</div>
-        </div>
-    </div-->
+
     <script type="text/javascript" src="./src/js/app.js"></script>
   </body>
 </html>

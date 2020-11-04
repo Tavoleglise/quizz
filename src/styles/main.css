@@ -172,12 +172,28 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .quizz .answersPackage1 .answerPackage1__item {
   width: 256px;
   height: 256px;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .quizz .answersPackage1 .answerPackage1__1 {
@@ -209,6 +225,11 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .quizz .answerPackage2 .answerPackageBox {
@@ -230,6 +251,17 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.quizz .answerPackage2 .answerPackageBox .answerPackage2__active {
+  border-color: red;
+  border-width: 5px;
+  border-style: solid;
 }
 
 .quizz .answerPackage3 {
@@ -239,6 +271,11 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .quizz .answerPackage3 .answerPackage3__item {
@@ -261,11 +298,39 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
 .quizz .finalButton img {
   max-width: 300px;
+}
+
+.quizz .conjuntoProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.quizz .conjuntoProductos .product img {
+  max-width: 300px;
+}
+
+.quizz .tituloResultado {
+  color: #fff;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

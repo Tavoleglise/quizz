@@ -8,9 +8,9 @@ const results = {
   respuestaP3: null,
 };
 const getAnswers = (numeroPregunta, numeroRespuesta) => {
-  let respuestas = document.getElementById(`answersPackage${numeroPregunta}`)
-    .children;
-  console.log(respuestas);
+  let respuestas = document.getElementsByClassName(
+    `answersPackage${numeroPregunta}`
+  ).children;
 
   if (numeroPregunta == 1) {
     results.respuestaP1 = numeroRespuesta;
@@ -19,36 +19,43 @@ const getAnswers = (numeroPregunta, numeroRespuesta) => {
   } else if (numeroPregunta == 3) {
     results.respuestaP3 = numeroRespuesta;
   }
-
-  console.log(results);
 };
 
 const activateAnswer = (numeroPregunta, numeroRespuesta) => {
-  let element = document.getElementsByClassName(
-    `answerPackage${numeroPregunta}__${numeroRespuesta}`
-  );
-  if (numeroPregunta == 1) {
-  }
+  const elements = document.getElementById(`answersPackage${numeroPregunta}`)
+    .children;
+  Array.prototype.forEach.call(elements, (item) => {
+    if (
+      item.className.includes(
+        `answerPackage${numeroPregunta}__${numeroRespuesta}`
+      )
+    ) {
+      item.classList.add(`answerPackage${numeroPregunta}__active`);
+    } else {
+      item.classList.remove(`answerPackage${numeroPregunta}__active`);
+    }
+  });
 };
 
 const analizar = () => {
-  if (
-    results.respuestaP1 == 0 &&
-    results.respuestaP2 == 0 &&
-    results.respuestaP3 == 0
-  ) {
-    document.getElementById("resultados").innerHTML = resultado1;
-  } else if (
-    results.respuestaP1 == 0 &&
-    results.respuestaP2 == 0 &&
-    results.respuestaP3 == 1
-  ) {
-    document.getElementById("resultados").innerHTML = resultado2;
-  } else if (
-    results.respuestaP1 == 0 &&
-    results.respuestaP2 == 0 &&
-    results.respuestaP3 == 2
-  ) {
-    document.getElementById("resultados").innerHTML = resultado3;
+  let diario = document.getElementById("diario");
+  let semanal = document.getElementById("semanal");
+  let resultado = `${results.respuestaP1}${results.respuestaP2}${results.respuestaP3}`;
+  switch (resultado) {
+    case "000":
+      let productoDiario1 = document.createElement("div");
+      productoDiario1.textContent = "Sup, y'all?";
+      productoDiario1.setAttribute("class", "productoDiario");
+      document.getElementById("diario").appendChild(productoDiario1);
+      break;
+    case "100":
+      document.getElementById("resultados").innerHTML = resultado2;
+      break;
+    case "200":
+      document.getElementById("resultados").innerHTML = resultado3;
+      break;
+    case "300":
+      document.getElementById("resultados").innerHTML = resultado4;
+      break;
   }
 };
