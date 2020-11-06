@@ -49,12 +49,13 @@ body {
   background-color: #211915;
   font-family: "ApivitaAsty-light";
   position: relative;
+  overflow-x: hidden;
   .orange {
     position: absolute;
     right: -5%;
     bottom: 30%;
     img {
-      max-width: 200px;
+      max-width: 300px;
     }
   }
   .bee {
@@ -80,18 +81,18 @@ header {
 
   .honey {
     position: absolute;
-    left: -5%;
+    left: -10%;
     top: 70%;
     img {
-      width: 300px;
+      width: 400px;
     }
   }
   .panal {
     position: absolute;
     top: 0;
-    right: -7%;
+    right: -10%;
     img {
-      width: 300px;
+      width: 400px;
     }
   }
 
@@ -136,6 +137,8 @@ header {
   flex-direction: column;
   position: relative;
   margin-top: 50px;
+  color: #fff;
+  font-weight: bold;
   .question {
     @include question;
   }
@@ -146,15 +149,16 @@ header {
       height: 256px;
       background-size: cover;
       @include flexCenter;
+      cursor: pointer;
     }
     .answerPackage1__1 {
       background-image: url("../images/foto1.png");
     }
     .answerPackage1__2 {
-      background-image: url("../images/foto2.png");
+      background-image: url("../images/foto3.png");
     }
     .answerPackage1__3 {
-      background-image: url("../images/foto3.png");
+      background-image: url("../images/foto2.png");
     }
     .answerPackage1__4 {
       background-image: url("../images/foto4.png");
@@ -167,6 +171,7 @@ header {
   }
   .answerPackage2 {
     @include flexCenter;
+    cursor: pointer;
     .answerPackageBox {
       background-image: url("./../images/age_picture_apivita.png");
       width: 600px;
@@ -188,6 +193,7 @@ header {
 
   .answerPackage3 {
     @include flexCenter;
+    cursor: pointer;
     .answerPackage3__item {
       color: #fff;
       text-align: center;
@@ -209,6 +215,8 @@ header {
   }
   .conjuntoProductos {
     @include flexCenter;
+    margin-top: 60px;
+    margin-bottom: 60px;
     .product {
       img {
         max-width: 300px;
