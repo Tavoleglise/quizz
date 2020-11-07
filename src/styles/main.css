@@ -58,6 +58,33 @@ body .bee img {
   max-width: 70px;
 }
 
+body .bee1 {
+  left: 5%;
+  bottom: 30%;
+}
+
+body .bee1 img {
+  max-width: 70px;
+}
+
+body .bee2 {
+  left: 7%;
+  bottom: 40%;
+}
+
+body .bee2 img {
+  max-width: 70px;
+}
+
+body .bee3 {
+  left: 2%;
+  bottom: 35%;
+}
+
+body .bee3 img {
+  max-width: 70px;
+}
+
 header {
   height: 300px;
   background-image: url("../images/apivita_header.jpg");
@@ -139,6 +166,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .intro .get-start img {
@@ -311,6 +339,7 @@ header {
       justify-content: space-around;
   margin-top: 100px;
   margin-bottom: 100px;
+  cursor: pointer;
 }
 
 .quizz .finalButton img {
@@ -340,5 +369,57 @@ header {
 .quizz .tituloResultado {
   color: #fff;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .panal {
+    display: none;
+  }
+  .honey {
+    display: none;
+  }
+  .answersPackage1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .answerPackage3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .conjuntoProductos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .conjuntoProductos .product {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .bee {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

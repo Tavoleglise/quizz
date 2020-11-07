@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollToPlugin);
+
 const resultado1 = "resultado 1";
 const resultado2 = "resultado 2";
 const resultado3 = "resultado 3";
@@ -162,6 +164,9 @@ const results = {
   respuestaP2: null,
   respuestaP3: null,
 };
+const get_started = () => {
+  gsap.to(window, { duration: 1, scrollTo: "#quizz" });
+};
 const getAnswers = (numeroPregunta, numeroRespuesta) => {
   let respuestas = document.getElementsByClassName(
     `answersPackage${numeroPregunta}`
@@ -196,6 +201,7 @@ const analizar = () => {
   let diarioContainer = document.getElementById("diario");
   let semanalContainer = document.getElementById("semanal");
   let resultado = `${results.respuestaP1}${results.respuestaP2}${results.respuestaP3}`;
+  gsap.to(window, { duration: 1, scrollTo: "#results" });
   if (
     results.respuestaP1 != null &&
     results.respuestaP2 != null &&
@@ -432,6 +438,18 @@ const analizar = () => {
         productoDiario10.remove();
         break;
       case "023":
+        imagenProducto1.src = apivita_radiant_light;
+        imagenProducto2.src = apivita_radiant_eyetube;
+        imagenProducto3.src = apivita_radiant_serum;
+        imagenProducto4.src = apivita_limpiadores_milk;
+        productoDiario5.remove();
+        imagenProducto6.src = apivita_ni_apricot;
+        imagenProducto7.src = apivita_ni_aloe;
+        imagenProducto8.src = apivita_ni_ginkgo;
+        productoDiario9.remove();
+        productoDiario10.remove();
+        break;
+      default:
         imagenProducto1.src = apivita_radiant_light;
         imagenProducto2.src = apivita_radiant_eyetube;
         imagenProducto3.src = apivita_radiant_serum;

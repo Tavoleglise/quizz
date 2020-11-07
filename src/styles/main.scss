@@ -66,6 +66,27 @@ body {
       max-width: 70px;
     }
   }
+  .bee1 {
+    left: 5%;
+    bottom: 30%;
+    img {
+      max-width: 70px;
+    }
+  }
+  .bee2 {
+    left: 7%;
+    bottom: 40%;
+    img {
+      max-width: 70px;
+    }
+  }
+  .bee3 {
+    left: 2%;
+    bottom: 35%;
+    img {
+      max-width: 70px;
+    }
+  }
 }
 header {
   height: 300px;
@@ -126,6 +147,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    cursor: pointer;
     img {
       max-width: 250px;
     }
@@ -209,6 +231,7 @@ header {
     @include flexCenter;
     margin-top: 100px;
     margin-bottom: 100px;
+    cursor: pointer;
     img {
       max-width: 300px;
     }
@@ -226,5 +249,31 @@ header {
   .tituloResultado {
     color: #fff;
     text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .panal {
+    display: none;
+  }
+  .honey {
+    display: none;
+  }
+  .answersPackage1 {
+    @include flexCenterColumn;
+  }
+
+  .answerPackage3 {
+    @include flexCenterColumn;
+  }
+
+  .conjuntoProductos {
+    @include flexCenterColumn;
+    .product {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  .bee {
+    display: none;
   }
 }
