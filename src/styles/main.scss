@@ -186,7 +186,7 @@ header {
       background-image: url("../images/foto4.png");
     }
     .answerPackage1__active {
-      border-color: red;
+      border-color: #e7b83a;
       border-width: 5px;
       border-style: solid;
     }
@@ -206,7 +206,7 @@ header {
         @include flexCenter;
       }
       .answerPackage2__active {
-        border-color: red;
+        border-color: #e7b83a;
         border-width: 5px;
         border-style: solid;
       }
@@ -224,7 +224,7 @@ header {
       }
     }
     .answerPackage3__active {
-      border-bottom: 5px solid red;
+      border-bottom: 5px solid #e7b83a;
     }
   }
   .finalButton {
@@ -251,7 +251,38 @@ header {
     text-align: center;
   }
 }
+footer {
+  @include flexCenter;
+  color: #fff;
+  text-align: center;
+  height: 200px;
+  .footerContainer {
+    width: 600px;
+    @include flexCenter;
+    .facebookContainer {
+      cursor: pointer;
+      img {
+        max-width: 50px;
+      }
+    }
+    .instagramContainer {
+      cursor: pointer;
+      img {
+        max-width: 50px;
+      }
+    }
+    .FarmaciaContainer {
+      cursor: pointer;
+      @include flexCenterColumn;
+      img {
+        margin-top: 10px;
+      }
+    }
+  }
+}
 @media (max-width: 600px) {
+  body {
+  }
   .panal {
     display: none;
   }
@@ -275,5 +306,11 @@ header {
   }
   .bee {
     display: none;
+  }
+  .orange {
+    display: none;
+  }
+  .footerContainer {
+    @include flexCenterColumn;
   }
 }

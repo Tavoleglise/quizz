@@ -6,17 +6,23 @@ const intro = document.getElementsByClassName("intro");
 const orange = document.getElementsByClassName("orange");
 
 const tl = new TimelineLite({ pause: true });
-tl.from(panal, 1, {
+tl.from(".header", 1, {
   autoAlpha: 0,
-  scale: 0.5,
-  y: "+=30",
+  x: "+=30",
   ease: Power4.easeInOut,
-}).from(honey, 1, {
-  autoAlpha: 0,
-  scale: 0.5,
-  y: "+=30",
-  ease: Power4.easeInOut,
-});
+})
+  .from(panal, 1, {
+    autoAlpha: 0,
+    scale: 0.5,
+    y: "+=30",
+    ease: Power4.easeInOut,
+  })
+  .from(honey, 1, {
+    autoAlpha: 0,
+    scale: 0.5,
+    y: "+=30",
+    ease: Power4.easeInOut,
+  });
 window.onload = tl.play();
 
 gsap.from(".orange", 1, {
