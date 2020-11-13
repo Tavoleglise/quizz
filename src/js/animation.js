@@ -71,3 +71,10 @@ gsap.to(".orange", {
   },
   y: 150,
 });
+
+gsap.from(".answerPackage1__item", 1, {
+  scrollTrigger: ".answersPackage1",
+  scale: 0,
+  ease: Power4.easeInOut,
+  stagger: 0.1,
+});

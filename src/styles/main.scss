@@ -194,11 +194,13 @@ header {
   .answerPackage2 {
     @include flexCenter;
     cursor: pointer;
+    color: #666;
     .answerPackageBox {
-      background-image: url("./../images/age_picture_apivita.png");
+      background-image: url("./../images/apivita_edades.jpg");
       width: 600px;
       height: 400px;
       background-size: cover;
+      background-position: center;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       grid-gap: 1rem;
@@ -237,6 +239,10 @@ header {
     }
   }
   .conjuntoProductos {
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
     @include flexCenter;
     margin-top: 60px;
     margin-bottom: 60px;

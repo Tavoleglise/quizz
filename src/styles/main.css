@@ -263,13 +263,15 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   cursor: pointer;
+  color: #666;
 }
 
 .quizz .answerPackage2 .answerPackageBox {
-  background-image: url("./../images/age_picture_apivita.png");
+  background-image: url("./../images/apivita_edades.jpg");
   width: 600px;
   height: 400px;
   background-size: cover;
+  background-position: center;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
@@ -360,6 +362,11 @@ header {
       justify-content: space-around;
   margin-top: 60px;
   margin-bottom: 60px;
+}
+
+.quizz .conjuntoProductos a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .quizz .conjuntoProductos .product img {
