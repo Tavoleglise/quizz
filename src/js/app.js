@@ -57,14 +57,17 @@ const p23 = [
 //Apivita bee radiante
 const p31 = [
   "src/images/APIVITA_BEE_RADIANT/10-22-01-632 BEE RADIANT LIGHT JAR _ BOX.png",
+  "Apivita bee radiant light jar",
 ];
 
 const p32 = [
   "src/images/APIVITA_BEE_RADIANT/10-22-01-634 BEE RADIANT EYE TUBE _ BOX.png",
+  "Apivita bee radiant eye tube",
 ];
 
 const p33 = [
   "src/images/APIVITA_BEE_RADIANT/10-22-01-636 BEE RADIANT SERUM BOTTLE _ BOX.png",
+  "Apivita bee radiant serum bottle",
 ];
 
 //Apivita crema de manos
@@ -571,46 +574,148 @@ const analizar = () => {
         acomodar(p121, p122, p123, p72, null, p98, p92, p912, null, null);
         break;
       case "100":
-        acomodar(p21, p22, p23, p71, null, p97, p96, p92, p911, null);
+        acomodar(p21, p22, p23, p72, null, p97, p96, p99, p912, null);
         break;
       case "101":
-        acomodar(p21, p22, p23, p71, null, p97, p96, p92, p911, null);
+        acomodar(p21, p22, p23, p73, null, p97, p94, p99, p912, null);
         break;
       case "102":
-        acomodar(p21, p22, p23, p71, null, p97, p96, p92, p911, null);
+        acomodar(p21, p22, p23, p71, null, p91, p95, p99, p912, null);
         break;
       case "103":
-        acomodar(p21, p22, p23, p71, null, p97, p96, p92, p911, null);
+        acomodar(p21, p22, p23, p72, null, p97, p98, p98, p912, null);
         break;
       case "110":
-        acomodar(p21, p22, p23, p71, null, p97, p96, p92, p911, null);
+        acomodar(p21, p22, p23, p72, null, p97, p96, p99, p912, null);
         break;
       case "111":
-        acomodar(p21, p22, p23, p71, null, p97, p96, p92, p911, null);
+        acomodar(p21, p22, p23, p73, null, p97, p94, p99, p912, null);
         break;
       case "112":
-        acomodar(p21, p22, p23, p71, null, p97, p96, p92, p911, null);
+        acomodar(p21, p22, p23, p71, null, p91, p96, p92, p912, null);
         break;
       case "113":
-        acomodar(p21, p22, p23, p71, null, p97, p96, p92, p911, null);
+        acomodar(p21, p22, p23, p72, null, p97, p98, p92, p912, null);
         break;
       case "120":
-        acomodar(p21, p22, p23, p71, null, p97, p96, p92, p911, null);
+        acomodar(p31, p32, p33, p72, null, p91, p95, p910, p911, null);
         break;
       case "121":
-        acomodar(p21, p22, p23, p71, null, p97, p96, p92, p911, null);
+        acomodar(p31, p32, p33, p71, null, p97, p94, p910, p911, null);
         break;
       case "122":
-        acomodar(p21, p22, p23, p71, null, p97, p96, p92, p911, null);
+        acomodar(p31, p32, p33, p73, null, p91, p96, p910, p911, null);
         break;
       case "123":
-        acomodar(p21, p22, p23, p71, null, p97, p96, p92, p911, null);
+        acomodar(p31, p32, p33, p72, null, p91, p96, p910, p911, null);
         break;
       case "130":
-        acomodar(p21, p22, p23, p71, null, p97, p96, p92, p911, null);
+        acomodar(p121, p122, p123, p72, null, p91, p95, p910, p912, null);
         break;
       case "131":
-        acomodar(p21, p22, p23, p71, null, p97, p96, p92, p911, null);
+        acomodar(p121, p122, p123, p71, null, p91, p95, p910, p912, null);
+        break;
+      case "132":
+        acomodar(p121, p122, p123, p73, null, p91, p95, p910, p912, null);
+        break;
+      case "133":
+        acomodar(p121, p122, p123, p72, null, p91, p95, p910, p912, null);
+        break;
+      case "200":
+        acomodar(p21, p22, p23, p72, null, p97, p96, p99, p912, null);
+        break;
+      case "201":
+        acomodar(p21, p22, p23, p71, null, p97, p94, p99, p912, null);
+        break;
+      case "202":
+        acomodar(p21, p22, p23, p72, null, p91, p95, p99, p912, null);
+        break;
+      case "203":
+        acomodar(p21, p22, p23, p71, null, p97, p98, p98, p912, null);
+        break;
+      case "210":
+        acomodar(p21, p22, p23, p72, null, p97, p96, p99, p912, null);
+        break;
+      case "211":
+        acomodar(p21, p22, p23, p73, null, p97, p94, p99, p912, null);
+        break;
+      case "212":
+        acomodar(p21, p22, p23, p71, null, p91, p96, p92, p912, null);
+        break;
+      case "213":
+        acomodar(p21, p22, p23, p72, null, p97, p98, p92, p912, null);
+        break;
+      case "220":
+        acomodar(p31, p32, p33, p72, null, p91, p95, p910, p911, null);
+        break;
+      case "221":
+        acomodar(p31, p32, p33, p71, null, p97, p94, p910, p911, null);
+        break;
+      case "222":
+        acomodar(p31, p32, p33, p73, null, p91, p96, p910, p911, null);
+        break;
+      case "223":
+        acomodar(p31, p32, p33, p72, null, p91, p96, p910, p911, null);
+        break;
+      case "230":
+        acomodar(p121, p122, p123, p72, null, p91, p95, p910, p912, null);
+        break;
+      case "231":
+        acomodar(p121, p122, p123, p71, null, p91, p95, p910, p912, null);
+        break;
+      case "232":
+        acomodar(p121, p122, p123, p71, null, p91, p95, p910, p912, null);
+        break;
+      case "233":
+        acomodar(p121, p122, p123, p72, null, p91, p95, p910, p912, null);
+        break;
+      case "300":
+        acomodar(p21, p22, p23, p73, null, p97, p96, p99, p912, null);
+        break;
+      case "301":
+        acomodar(p21, p22, p23, p72, null, p97, p94, p99, p912, null);
+        break;
+      case "302":
+        acomodar(p21, p22, p23, p71, null, p91, p95, p99, p912, null);
+        break;
+      case "303":
+        acomodar(p21, p22, p23, p72, null, p97, p98, p98, p912, null);
+        break;
+      case "310":
+        acomodar(p21, p22, p23, p73, null, p97, p96, p99, p912, null);
+        break;
+      case "311":
+        acomodar(p21, p22, p23, p72, null, p97, p94, p99, p912, null);
+        break;
+      case "312":
+        acomodar(p21, p22, p23, p71, null, p91, p96, p92, p912, null);
+        break;
+      case "313":
+        acomodar(p21, p22, p23, p72, null, p97, p98, p92, p912, null);
+        break;
+      case "320":
+        acomodar(p31, p32, p33, p73, null, p91, p95, p910, p911, null);
+        break;
+      case "321":
+        acomodar(p31, p32, p33, p72, null, p97, p94, p910, p911, null);
+        break;
+      case "322":
+        acomodar(p31, p32, p33, p71, null, p91, p96, p910, p911, null);
+        break;
+      case "323":
+        acomodar(p31, p32, p33, p72, null, p91, p96, p910, p911, null);
+        break;
+      case "330":
+        acomodar(p121, p122, p123, p72, null, p91, p95, p910, p912, null);
+        break;
+      case "331":
+        acomodar(p121, p122, p123, p71, null, p91, p95, p910, p912, null);
+        break;
+      case "332":
+        acomodar(p121, p122, p123, p73, null, p91, p95, p910, p912, null);
+        break;
+      case "333":
+        acomodar(p121, p122, p123, p72, null, p91, p95, p910, p912, null);
         break;
 
       default:
